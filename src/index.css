@@ -1,0 +1,53 @@
+@font-face {
+  font-family: 'Pokemon';
+  src: url('/public//assets/fonts/Pokemon.ttf') format('truetype');
+}
+
+/* General body styles */
+body {
+  margin: 0;
+  font-family: 'Pokemon', sans-serif;
+  background-color: #1d1d1d;
+  color: #ffffff;
+  text-align: center;
+  letter-spacing: 7px;
+}
+
+/* Responsive container for the Phaser game */
+#phaser-game {
+  margin: 20px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Responsive canvas sizing */
+canvas {
+  width: 100%;
+  height: auto;
+  max-width: 800px; /* Maximum width for large screens */
+  box-sizing: border-box;
+  border: 5px solid #ffffff;
+}
+
+/* Responsive typography */
+h1 {
+  font-size: 2rem;
+  margin: 35px;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 1.5rem; /* Smaller title font for tablets */
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.2rem; /* Even smaller title font for mobile */
+  }
+
+  canvas {
+    max-width: 100%; /* Full width on smaller devices */
+  }
+}
